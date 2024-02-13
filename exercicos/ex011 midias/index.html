@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos 
+    diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir alguns audios em HTML5.</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay loop></audio><br>     <!--CONTROLS: ira aparecer um controle de comando que voce pode tocar o audio pausar ou mutar.-->   <!--    AUTOPLAY: vai fazer com que seu audio fique tocando de fundo enquanto voce faz outras coisas.-->    <!--LOOP: serve para toda vez que encerrar o audio ele começar de novo.-->
+    <!--MP3, WAV, OGG/ Esses sâo os outros formatos de audios compativeis.-->
+    <audio preload="meta data" controls> 
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">    <!-- Se o navegador nâo conseguir caregar o arquivo .mp3 ele vai passar ate o proximo ate conseguir carregar.-->
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>infelismente seu navegador nâo consegue reproduzir audio!</p>
+        <a href="midia/guanacast-33.mp3">clique aqui para baixar o arquivo mp3</a>
+    </audio>
+    
+</body>
+</html>
