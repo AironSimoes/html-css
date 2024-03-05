@@ -34,17 +34,21 @@
 <body>
     <h1>Exercicios de Tabelas</h1>
     <table>
+        <tfoot>
+            <th scope="row" colspan="4">Total</th>
+            <td>1000</td>
+        </tfoot>
         <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                 <th class="centralizado">Grupo</th>
-                 <th class="centralizado">Nomes</th>
-                 <th class="centralizado" colspan="3">Filmes</th>
+                 <th scope="col" class="centralizado">Grupo</th>
+                 <th scope="col" class="centralizado">Nomes</th>
+                 <th scope="colgroup" class="centralizado" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td class="centralizado" rowspan="3">Mulheres</td>
+            <tr >
+                <th scope="rowgroup" class="centralizado" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -63,7 +67,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td class="centralizado" rowspan="3">Homens</td>
+                <th scope="rowgroup" class="centralizado" rowspan="3">Homens</th>
                 <td>Bruno Mendoça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
